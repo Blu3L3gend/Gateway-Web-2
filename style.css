@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOME PAGE STYLE */
+/* CREATES THE NAV BAR*/
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* how i made my logo in the nav*/
+.Logo {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+}
+
+nav {
+  display: flex;
+}
+
+/* When you hover over the nav bar*/
+li a:hover {
+  background-color: lightcoral;
+}
+
+/* HERO IMAGE */
+body,
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("imgs/coffeepic.jpg");
+  height: 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+  background-color: black; /*for the border*/
+  border: none;
+  border-width: 100%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* how long a button takes to transition*/
+.button {
+  transition-duration: 0.4s;
+}
+
+/* button hover funtion for order button*/
+.button:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+/* CONTACT PAGE */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/*making the background for contact page*/
+.Container {
+  background-image: url("imgs/Contact\ Page\ BG.jpg");
+  height: 700px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* for the submit button */
+input[type="submit"] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: lightcoral;
+}
+
+.Form {
+  max-width: 300px;
+}
+
+/*To Center the contact page*/
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*for the message box*/
+input[type="text"],
+select,
+textarea {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* MENU PAGE */
+/* how i made product cards for each item*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px; /* adjusts the boxes size*/
+  height: 510px;
+  padding: 14px;
+  margin: 25px; /*spacing of the boxes*/
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 14px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  background-color: lightpink;
+}
+
+.Menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 750px;
+}
+
+/* Footer */
+/* And also social media */
+.Footer {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialmedia {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* Snapchat */
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
